@@ -1,0 +1,40 @@
+.search-bar {
+    width: 300px;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    font-family: $font-2;
+    font-size: 16px;
+    margin: 30px 0px 30px 0px;
+}
+
+.meals-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.meal-card {
+    flex: 1 0 20%;
+    min-width: 180px;
+    max-width: 280px;
+    border: 2px solid $color-1;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.img-meal {
+    width: 90%;
+    border-radius: 10px;
+}
+
+.h-meal {
+    height: 60px;
+}
+
+.p-instructions {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8;
+    overflow: hidden;
+    margin: 10px 0px 10px 0px;
+}

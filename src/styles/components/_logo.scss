@@ -6,6 +6,12 @@
     justify-content: flex-end;
 }
 
+.h1-logo {
+    font-size: 36px;
+    color: #fff;
+    margin: 0px;
+}
+
 @media screen and (max-width: 500px) {
     .logo {
         display: none;
