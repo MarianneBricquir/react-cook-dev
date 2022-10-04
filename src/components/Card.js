@@ -10,8 +10,10 @@ const Card = ({ meal }) => {
         <div>
             <div className="meal-card" onClick={() => navigate(`/${meal.idMeal}`)}>
                 <h2 className="h-meal">{meal.strMeal}</h2>
-                <p className="p-origin">Origin : {meal.strArea}</p>
                 <img className="img-meal" src={meal.strMealThumb} alt={"photo " + meal.strMeal} />
+                <p className="p-origin">Origin : {meal.strArea}</p>
+                <div className="meals-category">{meal.strCategory}</div>
+
             </div>
         </div>
     );
