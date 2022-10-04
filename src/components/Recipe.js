@@ -19,6 +19,12 @@ const Recipe = () => {
 
     }, [item]);
 
+    if (item) {
+        const strYoutube = item.strYoutube;
+        const str = strYoutube.split("=");
+        id = str[str.length - 1];
+    }
+
     return (
         <>
             < Navbar />
