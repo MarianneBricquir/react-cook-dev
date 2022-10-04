@@ -11,6 +11,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 180px;
 }
 .meal-card {
     flex: 1 0 20%;
@@ -20,6 +21,13 @@
     margin: 5px;
     padding: 10px;
     border-radius: 10px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $color-1;
+        transform: scale(1.03);
+        color: #fff;
+    }
 }
 
 .img-meal {
@@ -29,6 +37,11 @@
 
 .h-meal {
     height: 60px;
+}
+
+.p-origin {
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .p-instructions {

@@ -15,7 +15,7 @@ const Navbar = () => {
         const changeWidth = () => {
             setLargeur(window.innerWidth);
 
-            if (window.innerWidth > 500) {
+            if (window.innerWidth > 700) {
                 setToggleMenu(false)
             }
         }
@@ -28,30 +28,31 @@ const Navbar = () => {
     }, [])
 
     return (
-        <div className="navigation">
+        <header>
+            <div className="navigation">
+                <Logo />
 
-            {
-                (toggleMenu || largeur > 500) && (
-                    <ul className="liste">
-                        <NavLink to="/accueil" className={(nav) => (nav.isActive ? "nav-active" : "")}>
-                            <li className="items items--1">Accueil</li>
-                        </NavLink>
-                        <NavLink to="/recette" className={(nav) => (nav.isActive ? "nav-active" : "")}>
-                            <li className="items items--1">Recettes</li>
-                        </NavLink>
-                        <NavLink to="/cocktail" className={(nav) => (nav.isActive ? "nav-active" : "")}>
-                            <li className="items items--2">Cocktails</li>
-                        </NavLink>
-                        <NavLink to="/about" className={(nav) => (nav.isActive ? "nav-active" : "")}>
-                            <li className="items items--3">A propos</li>
-                        </NavLink>
-                        <Logo />
-                    </ul>
-                )
-            }
+                {
+                    (toggleMenu || largeur > 700) && (
 
-            <button onClick={toggleNavSmallScreen} className="btn">Menu</button>
-        </div>
+                        <ul className="liste">
+                            <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
+                                <li className="items items--1">Accueil</li>
+                            </NavLink>
+                            <NavLink to="/recette" className={(nav) => (nav.isActive ? "nav-active" : "")}>
+                                <li className="items items--2">Recettes</li>
+                            </NavLink>
+                            <NavLink to="/about" className={(nav) => (nav.isActive ? "nav-active" : "")}>
+                                <li className="items items--3">A propos</li>
+                            </NavLink>
+
+                        </ul>
+                    )
+                }
+
+                <button onClick={toggleNavSmallScreen} className="btn">Menu</button>
+            </div>
+        </header>
 
 
     );

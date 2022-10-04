@@ -1,0 +1,23 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text {
+    max-width: 600px;
+
+    a {
+        color: $color-2;
+    }
+
+    a:hover {
+        font-weight: 800;
+    }
+}
+
+.p-about {
+    font-family: $font-2;
+    margin: 30px 40px;
+}

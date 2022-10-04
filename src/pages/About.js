@@ -5,21 +5,25 @@ const About = () => {
     return (
         <div>
             <Navbar />
-            <h1>A propos de React Cook</h1>
-            <br />
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-                quia culpa beatae deleniti dignissimos veniam debitis veritatis
-                temporibus, repellendus nihil ea omnis cum hic praesentium quisquam ad
-                fugiat! Labore ipsa perspiciatis, aut esse odio repellendus distinctio
-                doloremque sint provident doloribus blanditiis, quaerat rerum. Facere
-                harum in ratione eos, minima blanditiis dicta ad minus quos temporibus
-                adipisci excepturi ab exercitationem iure esse enim, natus repellat
-                error reiciendis iusto. Dicta quibusdam, ipsum enim doloribus veritatis
-                officia voluptas, similique in veniam sed possimus? Magnam voluptates
-                reiciendis, non ipsum, fugiat minus quasi architecto deleniti voluptate
-                quis officia corporis natus veniam dicta excepturi atque commodi?
-            </p>
+            <div className="about-container">
+                <h1>A propos de React Cooking</h1>
+
+                <div className="about-text">
+                    <p className="p-about">
+                        Cette application a été réalisée dans le cadre d'un TP de la formation <a href="https://fromscratch.podia.com/react-de-a-a-z" target="_blank">React De A à Z de From Scratch</a>.
+                        Le premier cours est accessible <a href="https://www.youtube.com/watch?v=f0X1Tl8aHtA" target="_blank">ici</a>.
+                    </p>
+
+                    <p className="p-about">
+                        L'API utilisée est <a href="https://www.themealdb.com/api.php" target="_blank">The Meal DB</a>.
+                    </p>
+
+                    <p className="p-about">
+                        Je suis également en formation développement web avec OpenClassrooms.
+                        Pour visiter mon site internet, <a href="https://mariannebricquir.github.io/site-web/" target="_blank">c'est par ici</a> !
+                    </p>
+                </div>
+            </div>
         </div>
     );
 };
